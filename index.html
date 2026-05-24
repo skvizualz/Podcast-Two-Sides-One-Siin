@@ -73,19 +73,41 @@ max-width:700px;
 color:#ddd;
 line-height:1.7;
 }
-
-.spotify-btn{
-display:inline-block;
+.listen-buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
 margin-top:25px;
-background:#1DB954;
-color:white;
-padding:15px 35px;
+}
+
+.listen-btn{
+padding:14px 22px;
 border-radius:10px;
 text-decoration:none;
 font-weight:bold;
-font-size:18px;
+color:white;
 }
 
+.spotify{
+background:#1DB954;
+}
+
+.apple{
+background:#A2AAAD;
+}
+
+.amazon{
+background:#FF9900;
+}
+
+.iheart{
+background:#C6002B;
+}
+
+.pandora{
+background:#3668FF;
+}
 section{
 max-width:1100px;
 margin:auto;
@@ -155,10 +177,35 @@ Street wisdom, healing, loyalty, mental health,
 growth, pain, hustle, and truth.
 </p>
 
-<a class="spotify-btn"
+<<div class="listen-buttons">
+
+<a class="listen-btn spotify"
 href="https://open.spotify.com/show/2sSdKIwmUQprujJxDu7NzD?si=asplWu-URlaX7RuExtKvwQ">
-LISTEN ON SPOTIFY
+Spotify
 </a>
+
+<a class="listen-btn apple"
+href="https://podcasts.apple.com/us/podcast/two-sides-one-siin/id1861530517">
+Apple Podcasts
+</a>
+
+<a class="listen-btn amazon"
+href="https://music.amazon.com/podcasts/6a91d9f2-fba5-455a-ac83-74bd145f03d5/two-sides-one-siin">
+Amazon Music
+</a>
+
+<a class="listen-btn iheart"
+href="https://www.iheart.com/podcast/53-two-sides-one-siin-312478963/?cmp=android_share&sc=android_social_share&pr=false"
+target="_blank">
+❤️ iHeart
+</a>
+
+<a class="listen-btn pandora"
+href="#">
+Pandora (Coming Soon)
+</a>
+
+</div>
 </div>
 </header>
 <section id="episodes">
