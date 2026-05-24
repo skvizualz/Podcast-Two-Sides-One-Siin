@@ -17,7 +17,29 @@ background:#080808;
 color:white;
 font-family:Arial,sans-serif;
 }
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
 
+nav h2{
+font-size:1.2rem;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-weight:bold;
+}
 header{
 height:100vh;
 background:
@@ -111,6 +133,18 @@ color:#777;
 
 <body>
 
+<nav>
+<h2>Two Sides One Siin</h2>
+
+<div class="nav-links">
+<a href="#episodes">Episodes</a>
+<a href="#about">About</a>
+<a href="https://open.spotify.com/show/2sSdKIwmUQprujJxDu7NzD?si=asplWu-URlaX7RuExtKvwQ">
+Spotify
+</a>
+</div>
+</nav>
+
 <header>
 <div class="hero">
 <h1>TWO SIDES ONE SIIN</h1>
@@ -127,10 +161,8 @@ LISTEN ON SPOTIFY
 </a>
 </div>
 </header>
-
-<section>
+<section id="episodes">
 <h2 class="section-title">Episodes</h2>
-
 <div class="card">
 <h3>Two Sides One Siin (The Intro)</h3>
 <p>The introduction to the movement and mindset.</p>
